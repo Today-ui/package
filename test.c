@@ -1,103 +1,155 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-struct Book
-{
-	char name[20];
-	short price;
-};
-
 int main()
 {
-	struct Book b1 = { "C语言程序设计",55 };
-	strcpy(b1.name, "C++");
-	printf("%s\n", b1.name);
-	/*struct Book* pb = &b1;
-	printf("%s\n", pb->name);
-	printf("%d\n", pb->price);*/
-	/*printf("%s\n", (*pb).name);
-	printf("%d\n", (*pb).price);*/
-	/*printf("书名:%s\n", b1.name);
-	printf("价格:%d\n", b1.price);
-	*/
+	int ch = 0;
+	while ((ch = getchar()) != EOF)
+	{
+		putchar(ch);
+	}
+	/*int ch = getchar();
+	printf("%c\n", ch);
+	putchar(ch);*/
+	
 	return 0;
 }
 
 //int main()
 //{
-//	char ch = 'w';
-//	char* pc = &ch;
-//	*pc = 'a';
-//	printf("%c\n", ch);
-//
-//	printf("%d\n", sizeof (pc));
+//	int i = 0;
+//	while (i <= 10)
+//	{
+//		i++;
+//		if (i == 5)
+//			continue;
+//		printf("%d ", i);
+//		
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int n = 1;
+//	int m = 2;
+//	switch (n)
+//	{
+//	case 1:m++;
+//	case 2:n++;
+//	case 3:
+//		switch (n)
+//		{
+//		case 1:n++;
+//		case 2:m++, n++;break;
+//		}
+//	case 4:m++;
+//		break;
+//	default:
+//		break;
+//	}
+//	printf("m=%d,n=%d", m, n);
+//	return 0;
+//}
+//int main()
+//{
+//	int day = 0;
+//	scanf("%d", &day);
+//	switch (day)
+//	{
+//	case 1:
+//		printf("星期一\n");
+//		break;
+//	case 2:
+//		printf("星期二\n");
+//		break;
+//	case 3:
+//		printf("星期三\n");
+//		break;
+//	case 4:
+//		printf("星期四\n");
+//		break;
+//	case 5:
+//		printf("星期五\n");
+//		break;
+//	case 6:
+//		printf("星期六\n");
+//		break;
+//	case 7:
+//		printf("星期日\n");
+//		break;
+//	default:
+//		printf("输入错误!\n");
+//	}
 //	return 0;
 //}
 
 //int main()
 //{
-//
-//	int a = 10;
-//	int* p = &a;
-//	printf("%p\n", p);
-//	printf("%p\n", &a);
-//	*p = 20;
-//	printf("%d\n", a);
+//	int i = 1;
+//	while (i <= 100)
+//	{
+//		printf("%d ", i);
+//		i += 2;
+//	}
+//	/*while (i <= 100)
+//	{
+//		if (i % 2 == 1)
+//			printf("%d ", i);
+//		i++;
+//	}*/
 //	return 0;
 //}
 
-//Max(int x, int y)
-//{
-//	if (x > y)
-//		return x;
-//	else
-//		return y;
-//}
-//#define Max(X,Y)(X>Y?X:Y)
-//
-//int main()
-//
-//{
-//	int a = 10;
-//	int b = 20;
-//	int max = Max(a, b);
-//	printf("max=%d\n", max);
-//	max = Max(a, b);
-//	printf("max=%d\n", max);
-//	return 0;
-//}
-//extern int Add(int, int);
-//
-//int main()
-//{
-//	int a = 10;
-//	int b = 20;
-//	int sum = Add(a, b);
-//	printf("sum=%d\n", sum);
-//	return 0;
-//}
-
-
-//int main()
-//{
-//	extern int g_val;
-//	printf("g_val=%d\n", g_val);
-//	return 0;
-//}
-
-
-//void test()
-//{
-//	static int a = 1;
-//	a++;
-//	printf("a=%d\n", a);
-//}
 //int main()
 //{
 //	int a = 0;
-//	while (a<5)
+//	printf("请输入一个数：");
+//	scanf("%d", &a);
+//	if (a % 2 == 1)
+//		printf("这个数是奇数\n");
+//	else
+//		printf("这个数不是奇数\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int num = 4;
+//	if (5==num)
 //	{
-//		test();
-//		a++;
+//		printf("呵呵\n");
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 2;
+//	if (a == 1)
+//		if (b == 2)
+//			printf("hehe\n");
+//	    else
+//			printf("haha\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int age=0 ;
+//	printf("请输入年龄：");
+//	scanf("%d", &age);
+//	if (age < 18)
+//	{
+//		printf("未成年\n");
+//		printf("不能谈恋爱\n");
+//	}
+//		
+//	else
+//	{
+//		if (age >= 18 && age < 28)
+//			printf("青年\n");
+//		else
+//			printf("成年\n");
 //	}
 //	return 0;
 //}
